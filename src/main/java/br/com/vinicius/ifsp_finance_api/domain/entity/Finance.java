@@ -1,5 +1,7 @@
 package br.com.vinicius.ifsp_finance_api.domain.entity;
 
+import br.com.vinicius.ifsp_finance_api.controller.request.FinanceRequestDTO;
+import br.com.vinicius.ifsp_finance_api.controller.response.FinanceResponseDTO;
 import br.com.vinicius.ifsp_finance_api.domain.enums.TagEnum;
 import jakarta.persistence.Entity;
 import jakarta.persistence.EnumType;
@@ -33,4 +35,11 @@ public class Finance {
     @Enumerated(EnumType.STRING)
     private TagEnum tagEnum;
     private Double value;
+
+    public Finance(FinanceRequestDTO request) {
+        this.date = request.date();
+        this.occurrence = request.occurrence();
+        this.tagEnum = request.tagEnum();
+        this.value = request.value();
+    }
 }
