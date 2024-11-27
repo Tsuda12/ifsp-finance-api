@@ -1,4 +1,4 @@
-# IFSP Finance API 🎮
+# IFSP Finance API 💵
 
 ![GitHub repo size](https://img.shields.io/github/repo-size/Tsuda12/ifsp-finance-api?style=for-the-badge)
 ![GitHub language count](https://img.shields.io/github/languages/count/Tsuda12/ifsp-finance-api?style=for-the-badge)
